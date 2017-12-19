@@ -1,0 +1,9 @@
+C:\Users\Eric\Desktop\DojoAssignments\VSCodeFiles\C#.Net Assignments\BeltExam2\bin\Debug\netcoreapp1.1\BeltExam2.deps.json
+C:\Users\Eric\Desktop\DojoAssignments\VSCodeFiles\C#.Net Assignments\BeltExam2\bin\Debug\netcoreapp1.1\BeltExam2.runtimeconfig.json
+C:\Users\Eric\Desktop\DojoAssignments\VSCodeFiles\C#.Net Assignments\BeltExam2\bin\Debug\netcoreapp1.1\BeltExam2.runtimeconfig.dev.json
+C:\Users\Eric\Desktop\DojoAssignments\VSCodeFiles\C#.Net Assignments\BeltExam2\bin\Debug\netcoreapp1.1\BeltExam2.dll
+C:\Users\Eric\Desktop\DojoAssignments\VSCodeFiles\C#.Net Assignments\BeltExam2\bin\Debug\netcoreapp1.1\BeltExam2.pdb
+C:\Users\Eric\Desktop\DojoAssignments\VSCodeFiles\C#.Net Assignments\BeltExam2\obj\Debug\netcoreapp1.1\BeltExam2.csproj.CoreCompileInputs.cache
+C:\Users\Eric\Desktop\DojoAssignments\VSCodeFiles\C#.Net Assignments\BeltExam2\obj\Debug\netcoreapp1.1\BeltExam2.AssemblyInfo.cs
+C:\Users\Eric\Desktop\DojoAssignments\VSCodeFiles\C#.Net Assignments\BeltExam2\obj\Debug\netcoreapp1.1\BeltExam2.dll
+C:\Users\Eric\Desktop\DojoAssignments\VSCodeFiles\C#.Net Assignments\BeltExam2\obj\Debug\netcoreapp1.1\BeltExam2.pdb

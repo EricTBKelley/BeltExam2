@@ -1,0 +1,18 @@
+@{Layout = "_Layout";}
+<h1>Users you may want to connect with:</h1>
+
+<table class="table">
+    <thead class="thead_dark">
+        <tr>
+            <th scope="col">Name:</th>
+            <th scope="col">Action:</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var user in ViewBag.OtherUsers){
+            <tr><td><a href="/Network/Show/@user.UserID">@user.Name</a></td>
+            <td><form action="/Network/InviteUser/@user.UserID" method="POST"><button>Connect</button></form></td></tr>
+        }
+        
+    </tbody>
+</table>

@@ -1,0 +1,45 @@
+@{ Layout = "_Layout"; }
+<h1>Hello @ViewBag.LoggedUser.Name</h1>
+
+<fieldset disabled="disabled">
+    <legend>Description</legend>
+    <p>@ViewBag.LoggedUser.Description</p>
+</fieldset>
+
+<h2>Your Professional Network:</h2>
+<div class="pre-scrollable">
+    @foreach(var user in ViewBag.NetworkBuddies)
+    {
+        <h3><a href="/Network/Show/@user.UserID">@user.Name</a></h3>
+    }
+</div>
+
+
+<h2>Invitations:</h2>
+<p>The following people asked you to be in their network</p>
+<table class="table">
+    <thead class="thead_dark">
+        <tr>
+            <th scope="col">Name:</th>
+            <th scope="col">Action:</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var user in ViewBag.Invitations){
+            <tr>
+                <td>
+                    <a href="/Network/Show/@user.UserID">@user.Name</a>
+                </td>
+                <td>
+                    <form action="/Network/AcceptInvite/@user.UserID" method="POST">
+                        <button>Accept</button>
+                    </form>
+                    <form action="/Network/IgnoreInvite/@user.UserID" method="POST">
+                        <button>Ignore</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>

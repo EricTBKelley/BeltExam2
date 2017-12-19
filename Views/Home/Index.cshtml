@@ -1,0 +1,55 @@
+﻿@{ ViewData["Title"] = "Home Page"; } @if (ViewBag.err != null){
+<div class="alert alert-danger">
+    <strong>@ViewBag.err</strong>
+</div>
+}
+<div class="col-md-5">
+    <div class="container">
+        <h1>Register</h1>
+        @model BeltExam2.Models.UserViewModel
+        <form asp-action="Register" asp-controller="Home" method="POST">
+            <div class="form-group">
+                <label asp-for="Name">Name:</label>
+                <span class="err" asp-validation-for="Name"></span>
+                <input class="form-control" asp-for="Name">
+            </div>
+            <div class="form-group">
+                <label asp-for="Email">Email:</label>
+                <span class="err" asp-validation-for="Email"></span>
+                <input class="form-control" asp-for="Email">
+            </div>
+            <div class="form-group">
+                <label asp-for="Password">Password:</label>
+                <span class="err" asp-validation-for="Password"></span>
+                <input class="form-control" asp-for="Password">
+            </div>
+            <div class="form-group">
+                <label asp-for="PasswordConfirm">Confirm Password:</label>
+                <span class="err" asp-validation-for="PasswordConfirm"></span>
+                <input class="form-control" asp-for="PasswordConfirm">
+            </div>
+            <div class="form-group">
+                <label asp-for="Description">Description:</label>
+                <span class="err" asp-validation-for="Description"></span>
+                <textarea asp-for="Description" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+</div>
+<div class="col-md-5">
+    <div class="container">
+        <form asp-action="LogIn" asp-controller="Home" method="POST">
+            <h1>Log In</h1>
+            <div class="form-group">
+                <label>Email:</label>
+                <input name="Email" type="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Password:</label>
+                <input name="Password" type="password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-info">Log In</button>
+        </form>
+    </div>
+</div>
